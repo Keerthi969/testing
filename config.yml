@@ -1,0 +1,33 @@
+categories:
+  - name: "FNA"
+    description: "This provides the FNA configuration."
+  - name: "FNI"
+    description: "This provides the FNI configuration."
+  - name: "FND"
+    description: "This provides the FNI configuration."
+  - name: "FNE"
+    description: "This provides the FNI configuration."
+
+sites:
+  - environment: "t1"
+    baseurl: "https://example.com"
+  - environment: "t2"
+    baseurl: "https://example.com"
+  - environment: "stg"
+    baseurl: "https://example.com"
+  - environment: "prod"
+    baseurl: "https://example.com"
+
+features:
+  fna:
+    baseurl: "{{ site.baseurl }}/fna/"
+    login: "{{ site.login }}/fna/login"
+  fni:
+    baseurl: "{{ site.baseurl }}/fni/"
+    login: "{{ site.login }}/fni/login"
+  fnd:
+    baseurl: "{{ site.baseurl }}/fnd/"
+    login: "{{ site.login }}/fnd/login"
+  fne:
+    baseurl: "{{ site.baseurl }}/fne/"
+    login: "{{ site.login }}/fne/login"
